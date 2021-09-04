@@ -27,6 +27,7 @@ body {
   background: hsl(244, 38%, 16%);
   color: hsl(0, 0%, 100%);
   font-size: 15px;
+  font-weight: 400;
   font-family: "Inter", sans-serif;
   /* font-family: "Lexend Deca", sans-serif; */
 }
@@ -45,6 +46,7 @@ body {
 
 .title {
   font-size: 1.7em;
+  font-weight: 700;
   line-height: 1.2em;
   margin-bottom: 1em;
 }
@@ -73,6 +75,7 @@ body {
 
 .number {
   font-size: 1.25em;
+  font-weight: 700;
 }
 
 .stats-heading {
@@ -95,15 +98,43 @@ body {
 
   .card {
     flex-direction: row;
+    margin: 0 10em;
   }
 
   .header-img {
     order: 2;
-    width: 40%;
+    flex: 1;
   }
 
   .details {
-    width: 60%;
-    padding: 0;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    line-height: 1em;
+    padding: 0 7em 0 4em;
+    width: 80%;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 2.5em;
+  }
+
+  .description {
+    margin-bottom: 2em;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .stats li {
+    margin: 1em 5em 1em 0;
   }
 }
