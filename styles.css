@@ -12,34 +12,72 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 2em;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 10px;
   background: hsl(244, 38%, 16%);
   color: hsl(0, 0%, 100%);
-  line-height: 1.25em;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  /* font-family: "Lexend Deca", sans-serif; */
 }
 
 .header-img {
   width: 100%;
   filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-130deg)
     saturate(600%) contrast(0.8);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.details {
+  padding: 1em 1.5em;
+}
+
+.title {
+  font-size: 1.7em;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+.highlight {
+  color: hsl(277, 64%, 61%);
 }
 
 .description {
   color: hsla(0, 0%, 100%, 0.75);
+  font-size: 1.05em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .stats {
   list-style: none;
   padding: 0;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.stats li {
+  margin: 1.5em 0;
+}
+
+.number {
+  font-size: 1.25em;
 }
 
 .stats-heading {
   color: hsla(0, 0%, 100%, 0.6);
+  margin-top: 0.5em;
 }
 
 .attribution {
@@ -48,4 +86,24 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .header-img {
+    order: 2;
+    width: 40%;
+  }
+
+  .details {
+    width: 60%;
+    padding: 0;
+  }
 }

@@ -11,28 +11,48 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Lexend+Deca"
+    />
     <link rel="stylesheet" href="./styles.css" />
 
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
-    <div container>
+    <div class="container">
       <div class="card">
         <img
           src="images/image-header-desktop.jpg"
           alt="header"
           class="header-img"
         />
-        <div class="title">Get insights that help your business grow.</div>
-        <div class="description">
-          Discover the benefits of data analytics and make better decisions
-          regarding revenue, customer experience, and overall efficiency.
+        <div class="details">
+          <h1 class="title">
+            Get <span class="highlight">insights</span> that help your business
+            grow.
+          </h1>
+          <div class="description">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </div>
+          <ul class="stats">
+            <li>
+              <span class="number">10k+</span>
+              <div class="stats-heading">companies</div>
+            </li>
+            <li>
+              <span class="number">314</span>
+
+              <div class="stats-heading">templates</div>
+            </li>
+            <li>
+              <span class="number">12m+</span>
+              <div class="stats-heading">queries</div>
+            </li>
+          </ul>
         </div>
-        <ul class="stats">
-          <li>10k+<br /><span class="stats-heading">companies</span></li>
-          <li>314<br /><span class="stats-heading">templates</span></li>
-          <li>12m+<br /><span class="stats-heading">queries</span></li>
-        </ul>
       </div>
     </div>
 
